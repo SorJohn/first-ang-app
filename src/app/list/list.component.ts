@@ -16,6 +16,7 @@ export class ListComponent implements OnInit {
     this._http.getBeer().subscribe(data => {
       this.brews = data;
       console.log(this.brews);
+      console.log("Wow");
     });
   }
 }
